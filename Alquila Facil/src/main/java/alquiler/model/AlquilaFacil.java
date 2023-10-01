@@ -3,6 +3,8 @@ package alquiler.model;
 import alquiler.exceptions.CampoVacioExcepcion;
 import alquiler.exceptions.ObjetoRepetidoException;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -75,14 +77,34 @@ public class AlquilaFacil {
     public ArrayList<Vehiculo> encontrarVehiculosDisponibles(LocalDateTime fechaInicio, LocalDateTime fechaFin) {
         ArrayList<Vehiculo> vehDisponibles= new ArrayList<>();
         for(Alquiler alquiler: alquileres){
-           if(alquiler.getFechaRegistro().equals(fechaInicio) && alquiler.getFechaRegistro().equals(fechaFin)
-                   && alquiler.getFechaRegistro().isAfter(fechaInicio) && alquiler.getFechaRegreso().isBefore(fechaFin)){
+           if(alquiler.getFechaAlquiler().equals(fechaInicio) && alquiler.getFechaAlquiler().equals(fechaFin)
+                   && alquiler.getFechaAlquiler().isAfter(fechaInicio) && alquiler.getFechaRegreso().isBefore(fechaFin)){
 
                vehDisponibles.add(alquiler.getVehiculo());
            }
         }
-        Collections.sort(vehDisponibles, Comparator.comparing(Vehiculo::get.precioPorDia))
+        vehDisponibles.sort(Comparator.comparing(Vehiculo::getPrecioPorDia));
         return vehDisponibles;
+    }
+
+    public ArrayList<Vehiculo> alquiladosDiaEspec(LocalDateTime fecha){
+        ArrayList<Vehiculo> alquiladosDia = new ArrayList<>();
+        for(Alquiler alquiler: alquileres){
+            if(alquiler.getFechaAlquiler().isEqual(fecha)){
+                alquiladosDia.add(alquiler.getVehiculo());
+            }
+        }
+        return alquiladosDia;
+    }
+
+    public double ganadoRangoFechas(LocalDateTime fechaInicio, LocalDateTime fechaFin){
+        double presio =0;
+        for(Alquiler alquiler: alquileres){
+            if((alquiler.getFechaAlquiler().isEqual(fechaInicio) || alquiler.getFechaAlquiler().isBefore(fechaInicio)) && (alquiler.getFechaRegreso().isEqual(fechaFin) || alquiler.getFechaRegreso().isBefore(fechaFin))){
+                presio += alquiler.getValorTotal();
+            }
+        }
+        return presio;
     }
 
 

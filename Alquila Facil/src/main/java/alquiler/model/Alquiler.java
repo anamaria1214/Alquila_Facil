@@ -16,7 +16,6 @@ public class Alquiler {
 
     private Cliente cliente;
     private Vehiculo vehiculo;
-    private LocalDateTime fechaRegistro;
     private LocalDateTime fechaAlquiler;
     private LocalDateTime fechaRegreso;
     private float valorTotal;
