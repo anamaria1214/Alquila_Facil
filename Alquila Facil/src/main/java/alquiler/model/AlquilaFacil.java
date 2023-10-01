@@ -80,24 +80,11 @@ public class AlquilaFacil {
 
                vehDisponibles.add(alquiler.getVehiculo());
            }
-
-
         }
-
-
+        Collections.sort(vehDisponibles, Comparator.comparing(Vehiculo::get.precioPorDia))
         return vehDisponibles;
     }
 
-    public ArrayList<Vehiculo> ordernarEconomicoCostoso(ArrayList<Vehiculo> vehiculos) {
-        ArrayList<Vehiculo> vehiculosEcoToExp= new ArrayList<>();
-        Vehiculo aux= vehiculos.get(0);
-        for(int i=0;i<vehiculos.size()-1; i++){
-            if(vehiculos.get(i).getPrecioPorDia()<vehiculos.get(i+1).getPrecioPorDia()){
-
-            }
-        }
-        return vehiculosEcoToExp;
-    }
 
 
 }
