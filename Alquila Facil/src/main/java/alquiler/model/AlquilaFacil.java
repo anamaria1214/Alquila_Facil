@@ -49,7 +49,7 @@ public class AlquilaFacil {
             throw new CampoVacioExcepcion("Campo obligatorio");
         }
         if (existeCliente(cliente)) {
-            LOGGER.log(Level.SEVERE, "La");
+            LOGGER.log(Level.SEVERE, "La persona que ingreso ya se encuestra registrada");
             throw new ObjetoRepetidoException("Valor ya registrado");
         }
 
