@@ -1,26 +1,28 @@
 package alquiler.controller;
 
+import alquiler.exceptions.CampoVacioExcepcion;
 import alquiler.exceptions.FechaInvalidaException;
 import alquiler.exceptions.NoDisponibleException;
+import alquiler.exceptions.ObjetoRepetidoException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Alquiler;
 import alquiler.model.Vehiculo;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class AlquilerVehiculosController implements Initializable {
 
     @FXML
     private TableView<Vehiculo> tablaVehiculos;
+    private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
 
     @FXML
     private TextField cedulaCliente;
@@ -53,12 +55,27 @@ public class AlquilerVehiculosController implements Initializable {
 
     public void registrarAlquiler(){
 
-        Vehiculo seleccionado = tablaVehiculos.getSelectionModel().getSelectedItem();
-        Alquiler alquiler= new Alquiler(alquilaFacil.encontrarCliente(cedulaCliente.getText()),seleccionado,
-                fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(),
-                alquilaFacil.calcularTotalAlquiler(fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(), seleccionado));
+        try {
+            Vehiculo seleccionado = tablaVehiculos.getSelectionModel().getSelectedItem();
+            Alquiler alquiler= new Alquiler(alquilaFacil.encontrarCliente(cedulaCliente.getText()),seleccionado,
+                    fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(),
+                    alquilaFacil.calcularTotalAlquiler(fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(), seleccionado));
 
             alquilaFacil.registrarAlquiler(alquiler);
+
+        } catch (CampoVacioExcepcion e) {
+            LOGGER.log(Level.WARNING, e.getMessage());
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(e.getMessage());
+            alert.setHeaderText(null);
+            alert.show();
+
+        }catch (NumberFormatException | NoDisponibleException | FechaInvalidaException ne){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Los campos son obligatorios");
+            alert.setHeaderText(null);
+            alert.show();
+        }
     }
 
 

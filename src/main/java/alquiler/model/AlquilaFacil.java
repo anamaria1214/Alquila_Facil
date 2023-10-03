@@ -136,19 +136,37 @@ public class AlquilaFacil {
         LOGGER.log(Level.INFO, "Vehículo registrado exitosamente");
     }
 
-    public void registrarAlquiler(Alquiler alquiler) throws NoDisponibleException, FechaInvalidaException {
-        if(comprobarDisponibilidad(alquiler)){
+    public void registrarAlquiler(Alquiler alquiler) throws NoDisponibleException, FechaInvalidaException, CampoVacioExcepcion {
+        if(comprobarDisponibilidad(alquiler.getFechaAlquiler(), alquiler.getFechaRegreso(), alquiler.getVehiculo().getPlaca())){
             LOGGER.log(Level.WARNING, "Vehículo no disponible");
             throw new NoDisponibleException("Vehículo no disponible");
         }if(alquiler.getFechaAlquiler().isAfter(alquiler.getFechaRegreso())){
             LOGGER.log(Level.WARNING, "Fecha dada de manera incorrecta");
             throw new FechaInvalidaException("Fecha dada de manera incorrecta");
+        }if(alquiler.getFechaAlquiler()==null) {
+            LOGGER.log(Level.WARNING, "La fecha está vacia");
+            throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
+        }if(alquiler.getFechaRegreso()==null){
+            LOGGER.log(Level.WARNING, "La fecha está vacia");
+            throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
+        }if(alquiler.getCliente()==null){
+            LOGGER.log(Level.WARNING, "No se ingresó la cédula del cliente");
+            throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
         }
+
+        alquileres.add(alquiler);
+        LOGGER.log(Level.INFO, "Alquiler registrado exitosamente");
 
     }
 
-    public boolean comprobarDisponibilidad(Alquiler alquiler) {
-        return alquiler.getVehiculo().isDisponible();
+    public boolean comprobarDisponibilidad(LocalDateTime fechaInicio, LocalDateTime fechaFinal, String placa) {
+        boolean disponible= true;
+        for(Alquiler alquiler: alquileres){
+            if((fechaInicio.isEqual(alquiler.getFechaAlquiler()) || fechaInicio.isAfter(alquiler.getFechaAlquiler())) && (fechaFinal.isEqual(alquiler.getFechaRegreso())|| fechaFinal.isBefore(alquiler.getFechaRegreso())) ){
+                disponible= false;
+            }
+        }
+        return disponible;
     }
 
     public boolean existeCliente(Cliente cliente) {
