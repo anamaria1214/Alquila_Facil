@@ -18,6 +18,6 @@ public class Alquiler {
     private Vehiculo vehiculo;
     private LocalDateTime fechaAlquiler;
     private LocalDateTime fechaRegreso;
-    private float valorTotal;
+    private double valorTotal;
 
 }

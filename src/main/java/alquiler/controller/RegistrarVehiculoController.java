@@ -62,10 +62,12 @@ public class RegistrarVehiculoController {
 
         }catch (NumberFormatException ne){
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Todos los campos son obligatios y ..., ..., .... son numéricos");
+            alert.setContentText("Los campos son obligatorios y el modelo, kilometraje, precio por día y némero de sillas debe ser numérico");
             alert.setHeaderText(null);
             alert.show();
         }
+
+
     }
 
 }

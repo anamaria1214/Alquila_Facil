@@ -2,6 +2,8 @@ package alquiler.model;
 import java.time.Duration;
 
 import alquiler.exceptions.CampoVacioExcepcion;
+import alquiler.exceptions.FechaInvalidaException;
+import alquiler.exceptions.NoDisponibleException;
 import alquiler.exceptions.ObjetoRepetidoException;
 import java.io.IOException;
 import java.util.Collections;
@@ -95,15 +97,15 @@ public class AlquilaFacil {
     public void registrarVehiculo(Vehiculo vehiculo) throws CampoVacioExcepcion, ObjetoRepetidoException {
         if (vehiculo.getPlaca() == null || vehiculo.getPlaca().isBlank()) {
             LOGGER.log(Level.WARNING, "La placa es obligatoria");
-            throw new CampoVacioExcepcion("Campo obligatorio");
+            throw new CampoVacioExcepcion("La placa es obligatoria");
         }
         if (vehiculo.getMarca() == null || vehiculo.getMarca().isBlank()) {
             LOGGER.log(Level.WARNING, "La marca es obligatoria");
-            throw new CampoVacioExcepcion("Campo obligatorio");
+            throw new CampoVacioExcepcion("La marca es obligatoria");
         }
         if (vehiculo.getNombre() == null || vehiculo.getNombre().isBlank()) {
             LOGGER.log(Level.WARNING, "El nombre es obligatorio");
-            throw new CampoVacioExcepcion("Campo obligatorio");
+            throw new CampoVacioExcepcion("El nombre es obligatorio");
         }
         if (existeVehiculo(vehiculo)) {
             LOGGER.log(Level.SEVERE, "El vehiculo que ingresó ya se encuentra registrado");
@@ -121,26 +123,27 @@ public class AlquilaFacil {
             LOGGER.log(Level.WARNING, "El precio por día es obligatoria");
             throw new CampoVacioExcepcion("Campo obligatorio");
         }
-        Boolean isAutomatico=vehiculo.isEsAutomatico();
-        if (isAutomatico == null) {
-            LOGGER.log(Level.WARNING, "El precio por día es obligatoria");
-            throw new CampoVacioExcepcion("Campo obligatorio");
-        }
         if (vehiculo.getNumSillas()<=0) {
-            LOGGER.log(Level.WARNING, "El precio por día es obligatoria");
+            LOGGER.log(Level.WARNING, "El número de sillas es obligatorio");
             throw new CampoVacioExcepcion("Campo obligatorio");
         }
-        Boolean isDisponible= vehiculo.isDisponible();
-        if (isDisponible == null ) {
-            LOGGER.log(Level.WARNING, "El precio por día es obligatoria");
-            throw new CampoVacioExcepcion("Campo obligatorio");
+        if (vehiculo.getFoto()==null || vehiculo.getFoto().isBlank()) {
+            LOGGER.log(Level.WARNING, "El URL de la foto es obligatorio");
+            throw new CampoVacioExcepcion("El URL de la foto es obligatorio");
         }
 
         vehiculos.add(vehiculo);
         LOGGER.log(Level.INFO, "Vehículo registrado exitosamente");
     }
 
-    public void registrarAlquiler(Alquiler alquiler) {
+    public void registrarAlquiler(Alquiler alquiler) throws NoDisponibleException, FechaInvalidaException {
+        if(comprobarDisponibilidad(alquiler)){
+            LOGGER.log(Level.WARNING, "Vehículo no disponible");
+            throw new NoDisponibleException("Vehículo no disponible");
+        }if(alquiler.getFechaAlquiler().isAfter(alquiler.getFechaRegreso())){
+            LOGGER.log(Level.WARNING, "Fecha dada de manera incorrecta");
+            throw new FechaInvalidaException("Fecha dada de manera incorrecta");
+        }
 
     }
 

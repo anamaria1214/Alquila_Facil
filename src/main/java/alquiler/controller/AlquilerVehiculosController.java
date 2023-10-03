@@ -1,11 +1,14 @@
 package alquiler.controller;
 
+import alquiler.exceptions.FechaInvalidaException;
+import alquiler.exceptions.NoDisponibleException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Alquiler;
 import alquiler.model.Vehiculo;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -22,10 +25,6 @@ public class AlquilerVehiculosController implements Initializable {
     @FXML
     private TextField cedulaCliente;
     @FXML
-    private TextField fechaInicio;
-    @FXML
-    private TextField fechaRegreso;
-    @FXML
     private TableColumn columnPlaca;
     @FXML
     private TableColumn columnModelo;
@@ -33,6 +32,10 @@ public class AlquilerVehiculosController implements Initializable {
     private TableColumn columnPrecio;
     @FXML
     private TableColumn columnMarca;
+    @FXML
+    private DatePicker fechaInicio1;
+    @FXML
+    private DatePicker fechaRegreso;
 
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
 
@@ -42,7 +45,7 @@ public class AlquilerVehiculosController implements Initializable {
         columnPlaca.setCellValueFactory( new PropertyValueFactory<>("placa"));
         columnModelo.setCellValueFactory( new PropertyValueFactory<>("marca"));
         columnPrecio.setCellValueFactory( new PropertyValueFactory<>("modelo"));
-        columnPrecio.setCellValueFactory( new PropertyValueFactory<>("precioPorDia"));
+        columnMarca.setCellValueFactory( new PropertyValueFactory<>("precioPorDia"));
 
         tablaVehiculos.setItems( FXCollections.observableArrayList( alquilaFacil.getVehiculos() ) );
     }
@@ -52,11 +55,10 @@ public class AlquilerVehiculosController implements Initializable {
 
         Vehiculo seleccionado = tablaVehiculos.getSelectionModel().getSelectedItem();
         Alquiler alquiler= new Alquiler(alquilaFacil.encontrarCliente(cedulaCliente.getText()),seleccionado,
-                fechaInicio.getText(), fechaRegreso.getText(),
-                alquilaFacil.calcularTotalAlquiler(fechaInicio, fechaRegreso, seleccionado));
+                fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(),
+                alquilaFacil.calcularTotalAlquiler(fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(), seleccionado));
 
-
-        alquilaFacil.registrarAlquiler(alquiler);
+            alquilaFacil.registrarAlquiler(alquiler);
     }
 
 
