@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84636222-a6e2-47e7-9811-75cd5a55571a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/InicioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/Propiedades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/TotalGanadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosAlquiladosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosDisponiblesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/exceptions/AmbosSeleccionadasException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Inicio.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TotalGanado.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/VehiculosAlquilados.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/VehiculosDisponibles.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/propiedades.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Alquila_Facil.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/app/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/controller/AlquilerVehiculosController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/controller/FacturaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/controller/RegistrarVehiculoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/controller/RegistroUsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/exceptions/CampoVacioExcepcion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/exceptions/NegativeNumberException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/exceptions/ObjetoRepetidoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/model/AlquilaFacil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/model/Alquiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/java/alquiler/model/Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/resources/AlquilerVehiculos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/resources/Factura.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/resources/RegistrarVehiculo.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/resources/RegistroUsuario.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/src/main/resources/principal.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/AlquilerVehiculos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/Factura.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/RegistrarVehiculo.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/RegistroUsuario.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/app/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/controller/AlquilerVehiculosController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/controller/FacturaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/controller/RegistrarVehiculoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/controller/RegistroUsuarioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/exceptions/CampoVacioExcepcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/exceptions/NegativeNumberException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/exceptions/ObjetoRepetidoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/model/AlquilaFacil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/model/Alquiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/model/Cliente$ClienteBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/model/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/alquiler/model/Vehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/classes/principal.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alquila Facil/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2WDiVWZFhLICV5OWv8a1FWXhKxx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ANAMARIA/OneDrive/Documentos/GitHub/Alquila Facil",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alquiler.app.Main" />
+      <module name="AlquilaFacil" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alquiler.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84636222-a6e2-47e7-9811-75cd5a55571a" name="Changes" comment="" />
+      <created>1696273575549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696273575549</updated>
+      <workItem from="1696273576597" duration="12961000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alquiler.controller.InicioController">
+   <children>
+      <Button fx:id="btnRegistrarV" layoutX="97.0" layoutY="258.0" mnemonicParsing="false" onAction="#mostrarVentanaRV" text="Registrar Vehiculo" />
+      <Button fx:id="btnRegistrarA" layoutX="97.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" onAction="#mostrarVentanaA" text="Registro Alquiler" />
+
+   </children>
+</AnchorPane>
