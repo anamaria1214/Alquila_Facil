@@ -14,33 +14,33 @@
          <TableColumn fx:id="columnPrecio" prefWidth="111.0" text="Precio por día" />
       </columns>
    </TableView>
-   <Label layoutX="163.0" layoutY="26.0" text="Alquilar Vehículo">
+   <Label fx:id="alquilarVehiculoLabel" layoutX="163.0" layoutY="26.0" text="Alquilar Vehículo">
       <font>
          <Font name="Arial Bold" size="24.0" />
       </font>
    </Label>
-   <Label layoutX="46.0" layoutY="72.0" text="Escoja el vehículo:">
+   <Label fx:id="escojaLabel" layoutX="46.0" layoutY="72.0" text="Escoja el vehículo:">
       <font>
          <Font name="Arial" size="14.0" />
       </font>
    </Label>
-   <Label layoutX="46.0" layoutY="339.0" text="Cédula del cliente:">
+   <Label fx:id="cedulaLabel" layoutX="46.0" layoutY="339.0" text="Cédula del cliente:">
       <font>
          <Font name="Arial" size="14.0" />
       </font>
    </Label>
    <TextField fx:id="cedulaCliente" layoutX="298.0" layoutY="335.0" prefHeight="25.0" prefWidth="174.0" />
-   <Label layoutX="47.0" layoutY="388.0" text="Fecha de Inicio:">
+   <Label fx:id="fInicioLabel" layoutX="47.0" layoutY="388.0" text="Fecha de Inicio:">
       <font>
          <Font name="Arial" size="14.0" />
       </font></Label>
-   <Label layoutX="47.0" layoutY="439.0" text="Fecha de regreso:">
+   <Label fx:id="fRegresoLabel" layoutX="47.0" layoutY="439.0" text="Fecha de regreso:">
       <font>
          <Font name="Arial" size="14.0" />
       </font>
    </Label>
    <DatePicker fx:id="fechaInicio1" layoutX="298.0" layoutY="384.0" />
-   <Button layoutX="399.0" layoutY="479.0" mnemonicParsing="false" text="Continuar">
+   <Button fx:id="btnContinuar" layoutX="399.0" layoutY="479.0" mnemonicParsing="false" onAction="#registrarAlquiler" text="Continuar">
       <font>
          <Font name="Arial" size="14.0" />
       </font>

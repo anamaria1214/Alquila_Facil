@@ -5,6 +5,7 @@ import alquiler.exceptions.ObjetoRepetidoException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Cliente;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 import java.util.logging.Level;
@@ -12,7 +13,7 @@ import java.util.logging.Logger;
 
 public class RegistroUsuarioController {
 
-    private AlquilaFacil alquilaFacil;
+    private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
 
     @FXML
@@ -33,17 +34,19 @@ public class RegistroUsuarioController {
 
     public void registrarUsuario(){
 
-
-
-        Cliente cliente = new Cliente(fieldCedula.getText(), fieldNombre.getText(), fieldApellidos.getText()
-        ,Integer.parseInt(fieldTelefono.getText()),fieldEmail.getText(),
-                fieldCiudad.getText(), fieldDireccion.getText());
-        cliente.setCedula( fieldCedula.getText());
-
         try {
+            Cliente cliente = new Cliente(fieldCedula.getText(), fieldNombre.getText(), fieldApellidos.getText()
+                    ,Integer.parseInt(fieldTelefono.getText()),fieldEmail.getText(),
+                    fieldCiudad.getText(), fieldDireccion.getText());
+            cliente.setCedula( fieldCedula.getText());
+
             alquilaFacil.registrarUsuario(cliente);
         } catch (CampoVacioExcepcion | ObjetoRepetidoException e) {
-            LOGGER.log(Level.WARNING, "El kilometraje es obligatoria");
+            LOGGER.log(Level.WARNING, e.getMessage());
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(e.getMessage());
+            alert.setHeaderText(null);
+            alert.show();
         }
     }
 

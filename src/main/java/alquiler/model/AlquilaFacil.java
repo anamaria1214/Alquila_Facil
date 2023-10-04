@@ -1,10 +1,8 @@
 package alquiler.model;
 import java.time.Duration;
 
-import alquiler.exceptions.CampoVacioExcepcion;
-import alquiler.exceptions.FechaInvalidaException;
-import alquiler.exceptions.NoDisponibleException;
-import alquiler.exceptions.ObjetoRepetidoException;
+import alquiler.exceptions.*;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
@@ -23,11 +21,11 @@ import java.util.logging.Logger;
 public class AlquilaFacil {
 
     @Getter
-    private ArrayList<Cliente> clientes = new ArrayList<>();
+    private ArrayList<Cliente> clientes;
     @Getter
-    private ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+    private ArrayList<Vehiculo> vehiculos;
     @Getter
-    private ArrayList<Alquiler> alquileres = new ArrayList<>();
+    private ArrayList<Alquiler> alquileres;
 
     //Variable que tendrá la instancia de esta clase
     private static AlquilaFacil alquilaFacil;
@@ -36,7 +34,9 @@ public class AlquilaFacil {
 
     private AlquilaFacil() {
         try {
-            LOGGER.addHandler(new FileHandler("logs.xml", true));
+            FileHandler fh = new FileHandler("logs.log", true);
+            fh.setFormatter(new SimpleFormatter());
+            LOGGER.addHandler(fh);
         } catch (IOException e) {
             LOGGER.log(Level.INFO, "Archivo no encontrado");
             LOGGER.log(Level.INFO, "Archivo no encontrado");
@@ -44,8 +44,8 @@ public class AlquilaFacil {
 
         LOGGER.log(Level.INFO, "Se creó una nueva instancia");
         this.alquileres = new ArrayList<>();
-        this.clientes = clientes;
-        this.vehiculos = vehiculos;
+        this.clientes =  new ArrayList<>();
+        this.vehiculos = new ArrayList<>();
     }
     public static AlquilaFacil getInstance(){
         if(alquilaFacil == null){
@@ -136,22 +136,22 @@ public class AlquilaFacil {
         LOGGER.log(Level.INFO, "Vehículo registrado exitosamente");
     }
 
-    public void registrarAlquiler(Alquiler alquiler) throws NoDisponibleException, FechaInvalidaException, CampoVacioExcepcion {
-        if(comprobarDisponibilidad(alquiler.getFechaAlquiler(), alquiler.getFechaRegreso(), alquiler.getVehiculo().getPlaca())){
-            LOGGER.log(Level.WARNING, "Vehículo no disponible");
-            throw new NoDisponibleException("Vehículo no disponible");
-        }if(alquiler.getFechaAlquiler().isAfter(alquiler.getFechaRegreso())){
-            LOGGER.log(Level.WARNING, "Fecha dada de manera incorrecta");
-            throw new FechaInvalidaException("Fecha dada de manera incorrecta");
-        }if(alquiler.getFechaAlquiler()==null) {
+    public void registrarAlquiler(Alquiler alquiler) throws NoDisponibleException, FechaInvalidaException, CampoVacioExcepcion, ObjetoNoExistenteException {
+        if(alquiler.getFechaAlquiler()==null) {
             LOGGER.log(Level.WARNING, "La fecha está vacia");
             throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
         }if(alquiler.getFechaRegreso()==null){
             LOGGER.log(Level.WARNING, "La fecha está vacia");
             throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
-        }if(alquiler.getCliente()==null){
+        }if(!comprobarDisponibilidad(alquiler.getFechaAlquiler(), alquiler.getFechaRegreso(), alquiler.getVehiculo().getPlaca())){
+            LOGGER.log(Level.WARNING, "Vehículo no disponible");
+            throw new NoDisponibleException("Vehículo no disponible");
+        }if(alquiler.getFechaAlquiler().isAfter(alquiler.getFechaRegreso())){
+            LOGGER.log(Level.WARNING, "Fecha dada de manera incorrecta");
+            throw new FechaInvalidaException("Fecha dada de manera incorrecta");
+        }if(!existeCliente(alquiler.getCliente())){
             LOGGER.log(Level.WARNING, "No se ingresó la cédula del cliente");
-            throw new CampoVacioExcepcion("Fecha dada de manera incorrecta");
+            throw new ObjetoNoExistenteException("Cliente no existente. Debe registrarlo");
         }
 
         alquileres.add(alquiler);
@@ -162,8 +162,10 @@ public class AlquilaFacil {
     public boolean comprobarDisponibilidad(LocalDateTime fechaInicio, LocalDateTime fechaFinal, String placa) {
         boolean disponible= true;
         for(Alquiler alquiler: alquileres){
-            if((fechaInicio.isEqual(alquiler.getFechaAlquiler()) || fechaInicio.isAfter(alquiler.getFechaAlquiler())) && (fechaFinal.isEqual(alquiler.getFechaRegreso())|| fechaFinal.isBefore(alquiler.getFechaRegreso())) ){
-                disponible= false;
+            if (alquiler.getVehiculo().getPlaca().equals(placa)) {
+                if(!(fechaInicio.isBefore(alquiler.getFechaAlquiler()) && fechaFinal.isAfter(alquiler.getFechaRegreso()) )){
+                    disponible= false;
+                }
             }
         }
         return disponible;
@@ -172,11 +174,11 @@ public class AlquilaFacil {
     public boolean existeCliente(Cliente cliente) {
         boolean flag = false;
         for (int i = 0; i < clientes.size() && !flag; i++) {
-            if (clientes.get(i).equals(cliente)) {
+            if (clientes.get(i).getCedula().equals(cliente.getCedula())) {
                 flag = true;
             }
         }
-        return false;
+        return flag;
     }
 
     public Cliente encontrarCliente(String cedula) {
@@ -198,20 +200,36 @@ public class AlquilaFacil {
                 flag = true;
             }
         }
-        return false;
+        return flag;
     }
 
     public ArrayList<Vehiculo> encontrarVehiculosDisponibles(LocalDateTime fechaInicio, LocalDateTime fechaFin) {
         ArrayList<Vehiculo> vehDisponibles = new ArrayList<>();
-        for (Alquiler alquiler : alquileres) {
-            if (alquiler.getFechaAlquiler().equals(fechaInicio) && alquiler.getFechaAlquiler().equals(fechaFin)
-                    && alquiler.getFechaAlquiler().isAfter(fechaInicio) && alquiler.getFechaRegreso().isBefore(fechaFin)) {
 
-                vehDisponibles.add(alquiler.getVehiculo());
+        for(Vehiculo vehiculo: vehiculos){
+            if( !estaAlquilado(vehiculo) ){
+                vehDisponibles.add(vehiculo);
+            }else{
+                if(comprobarDisponibilidad(fechaInicio, fechaFin, vehiculo.getPlaca())){
+                    vehDisponibles.add(vehiculo);
+                }
             }
+
         }
+
         vehDisponibles.sort(Comparator.comparing(Vehiculo::getPrecioPorDia));
         return vehDisponibles;
+    }
+
+    public boolean estaAlquilado(Vehiculo vehiculo){
+        boolean flag=  false;
+        for(Alquiler alquiler: alquileres){
+            if(alquiler.getVehiculo().getPlaca().equals(vehiculo.getPlaca())){
+                flag= true;
+            }
+        }
+        return flag;
+
     }
 
     public ArrayList<Vehiculo> alquiladosDiaEspec(LocalDateTime fecha) {
@@ -225,13 +243,13 @@ public class AlquilaFacil {
     }
 
     public double ganadoRangoFechas(LocalDateTime fechaInicio, LocalDateTime fechaFin) {
-        double presio = 0;
+        double precio = 0;
         for (Alquiler alquiler : alquileres) {
-            if ((alquiler.getFechaAlquiler().isEqual(fechaInicio) || alquiler.getFechaAlquiler().isBefore(fechaInicio)) && (alquiler.getFechaRegreso().isEqual(fechaFin) || alquiler.getFechaRegreso().isBefore(fechaFin))) {
-                presio += alquiler.getValorTotal();
+            if ((alquiler.getFechaAlquiler().isEqual(fechaInicio) || alquiler.getFechaAlquiler().isAfter(fechaInicio)) && (alquiler.getFechaRegreso().isEqual(fechaFin) || alquiler.getFechaRegreso().isBefore(fechaFin))) {
+                precio += alquiler.getValorTotal();
             }
         }
-        return presio;
+        return precio;
     }
 
     public int cuantasVecesSeRepite(String marca) {
@@ -246,8 +264,11 @@ public class AlquilaFacil {
 
     public String obtenerMarcaMasAlquilada() {
         String marcaMasAlquilada = "";
+        Vehiculo aux=alquileres.get(0).getVehiculo();
         for (int i = 0; i < alquileres.size(); i++) {
-
+            if(cuantasVecesSeRepite(aux.getMarca())<cuantasVecesSeRepite(alquileres.get(i).getVehiculo().getMarca())){
+                aux= alquileres.get(i).getVehiculo();
+            }
         }
         return marcaMasAlquilada;
     }

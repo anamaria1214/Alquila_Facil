@@ -1,19 +1,22 @@
 package alquiler.controller;
 
 import alquiler.servicios.Traducible;
+import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.ResourceBundle;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.*;
 import java.util.function.Consumer;
 
 public class Propiedades {
 
-    private static final String RUTA= "/propiedades";
     private static Propiedades instance;
+
+    @Getter
+    private String idioma;
+
+    @Getter
     private ResourceBundle bundle;
-    private List<Traducible> listaTraducibles;
 
     public static Propiedades getInstance(){
         if(instance==null){
@@ -23,21 +26,36 @@ public class Propiedades {
     }
 
     private Propiedades(){
-        bundle= ResourceBundle.getBundle(RUTA);
-        listaTraducibles= new ArrayList<>();
+        idioma = leerIdioma();
+        bundle= ResourceBundle.getBundle("propiedades", new Locale(idioma) );
     }
-    public void setLanguage(Locale locale) {
-        bundle = ResourceBundle.getBundle(RUTA, locale);
-        for (Traducible traducible : listaTraducibles) {
-            traducible.actualizarIdioma(bundle);
+
+    public String leerIdioma(){
+        try {
+            Properties ppr = new Properties();
+            FileInputStream fos = new FileInputStream("idioma.properties");
+            ppr.load(fos);
+            idioma = ppr.getProperty("idioma");
+            fos.close();
+            return idioma;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void escribirIdioma(String idioma){
+        try {
+            this.idioma = idioma;
+            this.bundle = ResourceBundle.getBundle("propiedades", new Locale(idioma));
+            Properties ppr = new Properties();
+            FileOutputStream fos = new FileOutputStream("idioma.properties");
+            ppr.setProperty("idioma", idioma);
+            ppr.store(fos,"");
+            fos.close();
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
-    public void agregarTraducible(Traducible traducible) {
-        traducible.actualizarIdioma(bundle);
-        listaTraducibles.add(traducible);
-    }
-
-
-
 
 }

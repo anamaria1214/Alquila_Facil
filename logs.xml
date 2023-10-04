@@ -150,3 +150,679 @@
   <message>Se creó una nueva instancia</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T17:10:03.857654600Z</date>
+  <millis>1696353003857</millis>
+  <nanos>654600</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T17:19:07.164619500Z</date>
+  <millis>1696353547164</millis>
+  <nanos>619500</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T17:28:24.403849200Z</date>
+  <millis>1696354104403</millis>
+  <nanos>849200</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:10:23.593802700Z</date>
+  <millis>1696367423593</millis>
+  <nanos>802700</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:17:05.565842400Z</date>
+  <millis>1696367825565</millis>
+  <nanos>842400</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:18:13.660151700Z</date>
+  <millis>1696367893660</millis>
+  <nanos>151700</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:19:41.220028Z</date>
+  <millis>1696367981220</millis>
+  <nanos>28000</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:28:30.284513100Z</date>
+  <millis>1696368510284</millis>
+  <nanos>513100</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:41:16.955854300Z</date>
+  <millis>1696369276955</millis>
+  <nanos>854300</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:43:00.626673400Z</date>
+  <millis>1696369380626</millis>
+  <nanos>673400</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:43:17.035841100Z</date>
+  <millis>1696369397035</millis>
+  <nanos>841100</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:46:07.674173800Z</date>
+  <millis>1696369567674</millis>
+  <nanos>173800</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:47:42.864150900Z</date>
+  <millis>1696369662864</millis>
+  <nanos>150900</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:49:38.008234200Z</date>
+  <millis>1696369778008</millis>
+  <nanos>234200</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T21:59:44.358136800Z</date>
+  <millis>1696370384358</millis>
+  <nanos>136800</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:00:12.599998300Z</date>
+  <millis>1696370412599</millis>
+  <nanos>998300</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T22:00:30.240632600Z</date>
+  <millis>1696370430240</millis>
+  <nanos>632600</nanos>
+  <sequence>2</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T22:04:22.076863400Z</date>
+  <millis>1696370662076</millis>
+  <nanos>863400</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:06:05.502260300Z</date>
+  <millis>1696370765502</millis>
+  <nanos>260300</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T22:08:33.515272Z</date>
+  <millis>1696370913515</millis>
+  <nanos>272000</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:09:07.247771800Z</date>
+  <millis>1696370947247</millis>
+  <nanos>771800</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T22:18:51.477460200Z</date>
+  <millis>1696371531477</millis>
+  <nanos>460200</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:19:25.587705900Z</date>
+  <millis>1696371565587</millis>
+  <nanos>705900</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T22:35:18.603508Z</date>
+  <millis>1696372518603</millis>
+  <nanos>508000</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:35:54.089284300Z</date>
+  <millis>1696372554089</millis>
+  <nanos>284300</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T22:38:10.328388600Z</date>
+  <millis>1696372690328</millis>
+  <nanos>388600</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T22:38:37.776806600Z</date>
+  <millis>1696372717776</millis>
+  <nanos>806600</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T23:00:40.372385400Z</date>
+  <millis>1696374040372</millis>
+  <nanos>385400</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T23:11:43.360726600Z</date>
+  <millis>1696374703360</millis>
+  <nanos>726600</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T23:12:15.663560100Z</date>
+  <millis>1696374735663</millis>
+  <nanos>560100</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:13:32.447635200Z</date>
+  <millis>1696374812447</millis>
+  <nanos>635200</nanos>
+  <sequence>2</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarUsuario</method>
+  <thread>18</thread>
+  <message>Cliente registrado exitosamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T23:18:27.619549500Z</date>
+  <millis>1696375107619</millis>
+  <nanos>549500</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T23:19:54.722114700Z</date>
+  <millis>1696375194722</millis>
+  <nanos>114700</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:20:32.163814Z</date>
+  <millis>1696375232163</millis>
+  <nanos>814000</nanos>
+  <sequence>2</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarUsuario</method>
+  <thread>18</thread>
+  <message>Cliente registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:20:47.043572600Z</date>
+  <millis>1696375247043</millis>
+  <nanos>572600</nanos>
+  <sequence>3</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>WARNING</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarAlquiler</method>
+  <thread>18</thread>
+  <message>Vehículo no disponible</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T23:25:53.068983200Z</date>
+  <millis>1696375553068</millis>
+  <nanos>983200</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T23:26:03.212612300Z</date>
+  <millis>1696375563212</millis>
+  <nanos>612300</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:26:03.552084500Z</date>
+  <millis>1696375563552</millis>
+  <nanos>84500</nanos>
+  <sequence>2</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:26:12.545475200Z</date>
+  <millis>1696375572545</millis>
+  <nanos>475200</nanos>
+  <sequence>3</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarUsuario</method>
+  <thread>18</thread>
+  <message>Cliente registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:26:39.115637800Z</date>
+  <millis>1696375599115</millis>
+  <nanos>637800</nanos>
+  <sequence>4</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>WARNING</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarAlquiler</method>
+  <thread>18</thread>
+  <message>No se ingresó la cédula del cliente</message>
+</record>
+<record>
+  <date>2023-10-03T23:27:16.669659400Z</date>
+  <millis>1696375636669</millis>
+  <nanos>659400</nanos>
+  <sequence>5</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>WARNING</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarAlquiler</method>
+  <thread>18</thread>
+  <message>No se ingresó la cédula del cliente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-03T23:32:09.394361800Z</date>
+  <millis>1696375929394</millis>
+  <nanos>361800</nanos>
+  <sequence>0</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Se creó una nueva instancia</message>
+</record>
+<record>
+  <date>2023-10-03T23:32:13.927478900Z</date>
+  <millis>1696375933927</millis>
+  <nanos>478900</nanos>
+  <sequence>1</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:32:21.627359600Z</date>
+  <millis>1696375941627</millis>
+  <nanos>359600</nanos>
+  <sequence>2</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarUsuario</method>
+  <thread>18</thread>
+  <message>Cliente registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:32:26.556390500Z</date>
+  <millis>1696375946556</millis>
+  <nanos>390500</nanos>
+  <sequence>3</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:32:28.922854800Z</date>
+  <millis>1696375948922</millis>
+  <nanos>854800</nanos>
+  <sequence>4</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarVehiculo</method>
+  <thread>18</thread>
+  <message>Vehículo registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:32:53.181356400Z</date>
+  <millis>1696375973181</millis>
+  <nanos>356400</nanos>
+  <sequence>5</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>INFO</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarAlquiler</method>
+  <thread>18</thread>
+  <message>Alquiler registrado exitosamente</message>
+</record>
+<record>
+  <date>2023-10-03T23:33:09.030989100Z</date>
+  <millis>1696375989030</millis>
+  <nanos>989100</nanos>
+  <sequence>6</sequence>
+  <logger>alquiler.model.AlquilaFacil</logger>
+  <level>WARNING</level>
+  <class>alquiler.model.AlquilaFacil</class>
+  <method>registrarAlquiler</method>
+  <thread>18</thread>
+  <message>Vehículo no disponible</message>
+</record>
+</log>

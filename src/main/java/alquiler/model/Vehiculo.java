@@ -5,10 +5,13 @@ import lombok.*;
 @ToString
 @Getter
 @Setter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 public class Vehiculo {
 
+    @EqualsAndHashCode.Include
     private String placa;
+
     private String nombre;
     private String marca;
     private int modelo;

@@ -1,5 +1,6 @@
 package alquiler.app;
 
+import alquiler.controller.Propiedades;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,10 +14,9 @@ public class Main extends Application {
 
         FXMLLoader loader = new FXMLLoader( Main.class.getResource("/MenuInicio.fxml") );
         Parent parent = loader.load();
-
         Scene scene = new Scene(parent);
         stage.setScene(scene);
-        stage.setTitle("Mi agencia");
+        stage.setTitle("Alquila Facil");
         stage.show();
 
     }

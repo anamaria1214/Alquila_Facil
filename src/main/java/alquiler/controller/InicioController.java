@@ -25,12 +25,6 @@ public class InicioController implements Traducible {
     @FXML
     private Button btnRegistrarV;
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
-    @FXML
-    void initialize() {
-        Propiedades.getInstance().agregarTraducible(this);
-    }
-
-
 
     public void mostrarVentanaRV(){
 

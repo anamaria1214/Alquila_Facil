@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="505.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alquiler.controller.AlquilerVehiculosController">
+<AnchorPane prefHeight="533.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alquiler.controller.AlquilerVehiculosController">
 
    <TableView fx:id="tablaVehiculos" layoutX="96.0" layoutY="111.0" prefHeight="200.0" prefWidth="332.0">
       <columns>
@@ -29,21 +29,21 @@
          <Font name="Arial" size="14.0" />
       </font>
    </Label>
-   <TextField fx:id="cedulaCliente" layoutX="323.0" layoutY="335.0" />
-   <Label layoutX="46.0" layoutY="375.0" text="Fecha de Inicio:">
+   <TextField fx:id="cedulaCliente" layoutX="298.0" layoutY="335.0" prefHeight="25.0" prefWidth="174.0" />
+   <Label layoutX="47.0" layoutY="388.0" text="Fecha de Inicio:">
       <font>
          <Font name="Arial" size="14.0" />
       </font></Label>
-   <TextField fx:id="fechaInicio" layoutX="323.0" layoutY="371.0" />
-   <Label layoutX="46.0" layoutY="411.0" text="Fecha de regreso:">
+   <Label layoutX="47.0" layoutY="439.0" text="Fecha de regreso:">
       <font>
          <Font name="Arial" size="14.0" />
       </font>
    </Label>
-   <TextField fx:id="fechaRegreso" layoutX="323.0" layoutY="407.0" />
-   <Button layoutX="46.0" layoutY="447.0" mnemonicParsing="false" text="Continuar">
+   <DatePicker fx:id="fechaInicio1" layoutX="298.0" layoutY="384.0" />
+   <Button layoutX="399.0" layoutY="479.0" mnemonicParsing="false" text="Continuar" onAction="#registrarAlquiler">
       <font>
          <Font name="Arial" size="14.0" />
       </font>
    </Button>
+   <DatePicker fx:id="fechaRegreso" layoutX="298.0" layoutY="435.0" />
 </AnchorPane>

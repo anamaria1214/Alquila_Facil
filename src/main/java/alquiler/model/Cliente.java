@@ -6,8 +6,9 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Cliente {
-
+    @EqualsAndHashCode.Include
     private String cedula;
     private String nombre;
     private String apellidos;

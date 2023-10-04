@@ -14,18 +14,18 @@
          <font>
             <Font name="Arial" size="14.0" />
          </font></Label>
-      <TextField fx:id="placa" layoutX="276.0" layoutY="119.0" />
+      <TextField fx:id="placa" layoutX="276.0" layoutY="119.0" text="ABC123" />
       <Label layoutX="34.0" layoutY="167.0" text="Nombre:">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Label>
-      <TextField fx:id="nombreVehiculo" layoutX="276.0" layoutY="163.0" />
-      <TextField fx:id="marca" layoutX="276.0" layoutY="206.0" />
-      <TextField fx:id="modelo" layoutX="276.0" layoutY="250.0" />
-      <TextField fx:id="kilometraje" layoutX="276.0" layoutY="294.0" />
-      <TextField fx:id="precioDia" layoutX="276.0" layoutY="338.0" />
-      <TextField fx:id="foto" layoutX="276.0" layoutY="465.0" />
-      <TextField fx:id="numSillas" layoutX="276.0" layoutY="426.0" />
+      <TextField fx:id="nombreVehiculo" layoutX="276.0" layoutY="163.0" text="carro" />
+      <TextField fx:id="marca" layoutX="276.0" layoutY="206.0" text="renault" />
+      <TextField fx:id="modelo" layoutX="277.0" layoutY="242.0" text="2021" />
+      <TextField fx:id="kilometraje" layoutX="276.0" layoutY="294.0" text="2000" />
+      <TextField fx:id="precioDia" layoutX="276.0" layoutY="338.0" text="90000" />
+      <TextField fx:id="foto" layoutX="276.0" layoutY="465.0" text="foto" />
+      <TextField fx:id="numSillas" layoutX="276.0" layoutY="426.0" text="5" />
       <Label layoutX="33.0" layoutY="210.0" text="Marca:">
          <font>
             <Font name="Arial" size="14.0" />
@@ -67,7 +67,7 @@
          </font>
       </Label>
       <CheckBox fx:id="opSi" layoutX="276.0" layoutY="385.0" mnemonicParsing="false" text="Si" />
-      <CheckBox fx:id="opNo" layoutX="319.0" layoutY="385.0" mnemonicParsing="false" text="No" />
+      <CheckBox fx:id="opNo" layoutX="319.0" layoutY="385.0" mnemonicParsing="false" selected="true" text="No" />
       <Button fx:id="btnRegistrarVehiculo" layoutX="351.0" layoutY="504.0" mnemonicParsing="false" onAction="#registrarVehiculo" text="Registrar">
          <font>
             <Font name="Arial" size="14.0" />

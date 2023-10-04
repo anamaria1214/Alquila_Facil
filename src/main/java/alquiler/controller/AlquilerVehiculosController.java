@@ -1,9 +1,6 @@
 package alquiler.controller;
 
-import alquiler.exceptions.CampoVacioExcepcion;
-import alquiler.exceptions.FechaInvalidaException;
-import alquiler.exceptions.NoDisponibleException;
-import alquiler.exceptions.ObjetoRepetidoException;
+import alquiler.exceptions.*;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Alquiler;
 import alquiler.model.Vehiculo;
@@ -38,9 +35,21 @@ public class AlquilerVehiculosController implements Initializable {
     private DatePicker fechaInicio1;
     @FXML
     private DatePicker fechaRegreso;
+    @FXML
+    private Label alquilarVehiculoLabel;
+    @FXML
+    private Label escojaLabel;
+    @FXML
+    private Label cedulaLabel;
+    @FXML
+    private Label fInicioLabel;
+    @FXML
+    private Label fRegresoLabel;
+    @FXML
+    private Button btnContinuar;
 
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
-
+    private Propiedades propiedades = Propiedades.getInstance();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -62,6 +71,13 @@ public class AlquilerVehiculosController implements Initializable {
                     alquilaFacil.calcularTotalAlquiler(fechaInicio1.getValue().atStartOfDay(), fechaRegreso.getValue().atStartOfDay(), seleccionado));
 
             alquilaFacil.registrarAlquiler(alquiler);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Alquiler Exitoso"+"\n"+"Se alquiló el vehiculo con:"+"\n"
+                            +"Placa: "+alquiler.getVehiculo().getPlaca()+"\"+" +
+                            "Desde el día: "+alquiler.getFechaAlquiler().toString()+"\n"+
+                            "Hasta el día: "+alquiler.getFechaRegreso()+"\n"+"Por un valor total de:"
+                            +alquiler.getValorTotal()+"$");
+            alert.show();
 
         } catch (CampoVacioExcepcion e) {
             LOGGER.log(Level.WARNING, e.getMessage());
@@ -70,9 +86,9 @@ public class AlquilerVehiculosController implements Initializable {
             alert.setHeaderText(null);
             alert.show();
 
-        }catch (NumberFormatException | NoDisponibleException | FechaInvalidaException ne){
+        }catch (ObjetoNoExistenteException | NumberFormatException | NoDisponibleException | FechaInvalidaException ne){
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Los campos son obligatorios");
+            alert.setContentText(ne.getMessage());
             alert.setHeaderText(null);
             alert.show();
         }
