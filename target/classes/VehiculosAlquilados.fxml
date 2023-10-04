@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="alquiler.controller.VehiculosAlquiladosController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alquiler.controller.VehiculosAlquiladosController">
+
+    <Label layoutX="103.0" layoutY="25.0" text="Vehiculos alquilados">
+        <font>
+            <Font name="Arial Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="137.0" layoutY="81.0" text="Ingrese el un rango de fechas para comprobar disponibilidad:">
+        <font>
+            <Font name="Arial" size="14.0" />
+        </font>
+    </Label>
+    <DatePicker fx:id="fInicial" layoutX="254.0" layoutY="124.0" />
+    <Label layoutX="40.0" layoutY="128.0" text="Fecha inicial:">
+        <font>
+            <Font name="Arial" size="14.0" />
+        </font>
+    </Label>
+    <Button fx:id="btnContuniar" layoutX="361.0" layoutY="177.0" mnemonicParsing="false" onAction="#consultarVehiculos" text="Consultar" />
+
+    <TableView fx:id="vehAlquilados" layoutX="31.0" layoutY="286.0" prefHeight="343.0" prefWidth="542.0">
+        <columns>
+            <TableColumn fx:id="placaD" prefWidth="135.5" text="Placa" />
+            <TableColumn fx:id="precioPorDia" prefWidth="135.5" text="Precio por día" />
+            <TableColumn fx:id="marca" prefWidth="135.5" text="Marca" />
+            <TableColumn fx:id="modelo" prefWidth="135.5" text="Modelo" />
+        </columns>
+    </TableView>
 
 </AnchorPane>

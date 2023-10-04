@@ -5,53 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84636222-a6e2-47e7-9811-75cd5a55571a" name="Changes" comment="un comi">
-      <change afterPath="$PROJECT_DIR$/idioma.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/TablaVehiculoDisponiblesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alquiler/exceptions/ObjetoNoExistenteException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.xml.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs.xml.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/AlquilerVehiculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/AlquilerVehiculosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/FacturaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/InicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/InicioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/MenuInicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/MenuInicioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/Propiedades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/Propiedades.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistroUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistroUsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/TotalGanadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/TotalGanadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosDisponiblesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosDisponiblesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idioma.properties" beforeDir="false" afterPath="$PROJECT_DIR$/idioma.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosAlquiladosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosAlquiladosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/model/AlquilaFacil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/model/AlquilaFacil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/model/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/model/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AlquilerVehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AlquilerVehiculos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Factura.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TablaVehiculoDisponibles.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/MenuInicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MenuInicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RegistrarUsuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/RegistrarUsuario.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RegistrarVehiculo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/RegistrarVehiculo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TotalGanado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TotalGanado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VehiculosDisponibles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VehiculosDisponibles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/propiedades_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/propiedades_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/propiedades_es.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/propiedades_es.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VehiculosAlquilados.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VehiculosAlquilados.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AlquilerVehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AlquilerVehiculos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Factura.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MenuInicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MenuInicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegistrarUsuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegistrarUsuario.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegistrarVehiculo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegistrarVehiculo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TotalGanado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TotalGanado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/VehiculosDisponibles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VehiculosDisponibles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/controller/MenuInicioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/controller/MenuInicioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/controller/RegistrarVehiculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/controller/RegistrarVehiculoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/controller/VehiculosDisponiblesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/controller/VehiculosDisponiblesController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/AlquilaFacil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/AlquilaFacil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/Alquiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/Alquiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/Cliente$ClienteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/Cliente$ClienteBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/Vehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principal.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propiedades.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +88,7 @@
       <workItem from="1696301628664" duration="5382000" />
       <workItem from="1696344662622" duration="25455000" />
       <workItem from="1696381701408" duration="2223000" />
+      <workItem from="1696387194825" duration="6244000" />
     </task>
     <task id="LOCAL-00001" summary="un comi">
       <option name="closed" value="true" />

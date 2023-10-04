@@ -4,8 +4,7 @@ import java.time.Duration;
 import alquiler.exceptions.*;
 
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,7 +14,6 @@ import lombok.Getter;
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class AlquilaFacil {
@@ -163,7 +161,7 @@ public class AlquilaFacil {
         boolean disponible= true;
         for(Alquiler alquiler: alquileres){
             if (alquiler.getVehiculo().getPlaca().equals(placa)) {
-                if(!(fechaInicio.isBefore(alquiler.getFechaAlquiler()) && fechaFinal.isAfter(alquiler.getFechaRegreso()) )){
+                if((fechaInicio.isBefore(alquiler.getFechaRegreso()) && fechaFinal.isAfter(alquiler.getFechaAlquiler()))){
                     disponible= false;
                 }
             }
@@ -216,7 +214,6 @@ public class AlquilaFacil {
             }
 
         }
-
         vehDisponibles.sort(Comparator.comparing(Vehiculo::getPrecioPorDia));
         return vehDisponibles;
     }
@@ -245,17 +242,28 @@ public class AlquilaFacil {
     public double ganadoRangoFechas(LocalDateTime fechaInicio, LocalDateTime fechaFin) {
         double precio = 0;
         for (Alquiler alquiler : alquileres) {
-            if ((alquiler.getFechaAlquiler().isEqual(fechaInicio) || alquiler.getFechaAlquiler().isAfter(fechaInicio)) && (alquiler.getFechaRegreso().isEqual(fechaFin) || alquiler.getFechaRegreso().isBefore(fechaFin))) {
+            if (fechaInicio.isBefore(alquiler.getFechaAlquiler()) && fechaFin.isAfter(alquiler.getFechaRegreso())){
                 precio += alquiler.getValorTotal();
             }
         }
         return precio;
     }
 
-    public int cuantasVecesSeRepite(String marca) {
-        int cuantasVeces = 0;
+    public ArrayList<String> retornarMarcas() {
+        Set<String> marcasSet = new HashSet<>();
         for (Alquiler alquiler : alquileres) {
-            if (alquiler.getVehiculo().getMarca().equals(marca)) {
+            marcasSet.add(alquiler.getVehiculo().getMarca());
+        }
+
+        // Convertir el conjunto en un ArrayList y retornarlo
+        ArrayList<String> marcasList = new ArrayList<>(marcasSet);
+        return marcasList;
+    }
+
+    public int cuantasVecesSeRepite(String marca, ArrayList<String> marcas) {
+        int cuantasVeces = 0;
+        for (int i = 0; i < marcas.size(); i++) {
+            if (marcas.get(i).equals(marca)) {
                 cuantasVeces++;
             }
         }
@@ -263,13 +271,24 @@ public class AlquilaFacil {
     }
 
     public String obtenerMarcaMasAlquilada() {
-        String marcaMasAlquilada = "";
-        Vehiculo aux=alquileres.get(0).getVehiculo();
-        for (int i = 0; i < alquileres.size(); i++) {
-            if(cuantasVecesSeRepite(aux.getMarca())<cuantasVecesSeRepite(alquileres.get(i).getVehiculo().getMarca())){
-                aux= alquileres.get(i).getVehiculo();
+        ArrayList<String> marcas = retornarMarcas();
+
+        if (marcas.isEmpty()) {
+            return ""; // Devuelve una cadena vacía si la lista de marcas está vacía
+        }
+
+        String marcaMasAlquilada = marcas.get(0);
+        int maxVeces = cuantasVecesSeRepite(marcaMasAlquilada, marcas);
+
+        for (int i = 1; i < marcas.size(); i++) {
+            String marcaActual = marcas.get(i);
+            int veces = cuantasVecesSeRepite(marcaActual, marcas);
+            if (veces > maxVeces) {
+                maxVeces = veces;
+                marcaMasAlquilada = marcaActual;
             }
         }
+
         return marcaMasAlquilada;
     }
 

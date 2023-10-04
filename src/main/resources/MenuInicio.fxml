@@ -21,7 +21,7 @@
       <Button fx:id="vehiculosDisponibles" layoutX="265.0" layoutY="248.0" mnemonicParsing="false" onAction="#abrirVehiculosDisponibles" prefHeight="25.0" prefWidth="141.0" text="Vehículos Disponibles" />
       <Button fx:id="vehiculosAlquilados" layoutX="264.0" layoutY="302.0" mnemonicParsing="false" onAction="#abrirVehiculosAlquilados" prefHeight="25.0" prefWidth="141.0" text="Vehiculos alquilados" />
       <Button fx:id="totalGanado" layoutX="264.0" layoutY="355.0" mnemonicParsing="false" onAction="#abrirTotalGanado" prefHeight="25.0" prefWidth="141.0" text="Total Ganado" />
-      <Button fx:id="marcaMasAlquilada" layoutX="265.0" layoutY="404.0" mnemonicParsing="false" onAction="#abrirMarcaMasAlquilada" prefHeight="25.0" prefWidth="141.0" text="Marca Más Alquilada" />
+      <Button fx:id="marcaMasAlquilada" layoutX="265.0" layoutY="404.0" mnemonicParsing="false" onAction="#lanzarMensaje" prefHeight="25.0" prefWidth="141.0" text="Marca Más Alquilada" />
       <Button fx:id="cambiarL" layoutX="44.0" layoutY="138.0" mnemonicParsing="false" onAction="#cambiarIdioma" prefHeight="25.0" prefWidth="165.0" text=" Cambiar Lenguaje" />
    </children>
 </AnchorPane>
