@@ -249,6 +249,7 @@ public class AlquilaFacil {
         return precio;
     }
 
+
     public ArrayList<String> retornarMarcas() {
         Set<String> marcasSet = new HashSet<>();
         for (Alquiler alquiler : alquileres) {

@@ -51,6 +51,7 @@ public class AlquilerVehiculosController implements Initializable {
     private String sAlqCon;
     private String placaF;
     private String diaI;
+    private String diaF;
     private String totalV;
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     private Propiedades propiedades = Propiedades.getInstance();
@@ -68,10 +69,10 @@ public class AlquilerVehiculosController implements Initializable {
         diaI=propiedades.getBundle().getString("diaI");
         diaF=propiedades.getBundle().getString("diaF");
         totalV=propiedades.getBundle().getString("totalV");
-        columnPlaca.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnPlaca"))));
-        columnModelo.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnModelo"))));
-        columnPrecio.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnPrice"))));
-        columnMarca.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnMarca"))));
+        columnPlaca.setCellValueFactory( new PropertyValueFactory<>("Placa"));
+        columnModelo.setCellValueFactory( new PropertyValueFactory<>("Modelo"));
+        columnPrecio.setCellValueFactory( new PropertyValueFactory<>("Precio"));
+        columnMarca.setCellValueFactory( new PropertyValueFactory<>("Marca"));
 
         tablaVehiculos.setItems( FXCollections.observableArrayList( alquilaFacil.getVehiculos() ) );
         

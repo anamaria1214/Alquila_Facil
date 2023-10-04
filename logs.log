@@ -290,3 +290,43 @@ oct. 03, 2023 11:10:22 P. M. alquiler.model.AlquilaFacil registrarAlquiler
 INFO: Alquiler registrado exitosamente
 oct. 03, 2023 11:10:26 P. M. alquiler.model.AlquilaFacil registrarAlquiler
 INFO: Alquiler registrado exitosamente
+oct. 03, 2023 11:40:12 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 03, 2023 11:40:32 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:40:41 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:40:45 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 03, 2023 11:44:02 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 03, 2023 11:44:15 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:44:19 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:45:26 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 03, 2023 11:45:32 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:45:38 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:45:42 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 03, 2023 11:49:50 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 03, 2023 11:49:53 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:49:58 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 03, 2023 11:50:13 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+INFO: Alquiler registrado exitosamente
+oct. 03, 2023 11:50:24 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+INFO: Alquiler registrado exitosamente
+oct. 03, 2023 11:51:18 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 03, 2023 11:51:21 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 03, 2023 11:51:24 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 03, 2023 11:51:38 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+INFO: Alquiler registrado exitosamente

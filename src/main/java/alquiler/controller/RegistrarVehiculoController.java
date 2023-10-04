@@ -5,6 +5,7 @@ import alquiler.exceptions.ObjetoRepetidoException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Vehiculo;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.net.URL;
@@ -12,7 +13,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class RegistrarVehiculoController {
+public class RegistrarVehiculoController implements Initializable {
     private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
     private Propiedades propiedades = Propiedades.getInstance();
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
@@ -58,10 +59,7 @@ public class RegistrarVehiculoController {
     private Label sillasLbl;
     @FXML
     private Label fotoLbl;
-    @FXML
-    private CheckBox opSi;
-    @FXML
-    private CheckBox opNo;
+
     @FXML
     private Button btnRegistrarVehiculo;
     @Override

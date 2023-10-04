@@ -9,13 +9,12 @@
       <change beforePath="$PROJECT_DIR$/idioma.properties" beforeDir="false" afterPath="$PROJECT_DIR$/idioma.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosAlquiladosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosAlquiladosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/AlquilerVehiculosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/AlquilerVehiculosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistrarVehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistrarVehiculoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistroUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/RegistroUsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/TotalGanadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/TotalGanadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosDisponiblesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/controller/VehiculosDisponiblesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alquiler/model/AlquilaFacil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alquiler/model/AlquilaFacil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MenuInicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MenuInicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VehiculosAlquilados.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VehiculosAlquilados.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AlquilerVehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AlquilerVehiculos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MenuInicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MenuInicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alquiler/model/AlquilaFacil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alquiler/model/AlquilaFacil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +88,7 @@
       <workItem from="1696344662622" duration="25455000" />
       <workItem from="1696381701408" duration="2223000" />
       <workItem from="1696387194825" duration="6244000" />
+      <workItem from="1696393878130" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="un comi">
       <option name="closed" value="true" />

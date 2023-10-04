@@ -47,7 +47,7 @@ public class VehiculosDisponiblesController implements Initializable {
     @FXML
     private Button btnConsultar;
 
-
+    private Propiedades propiedades = Propiedades.getInstance();
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
 
     @Override

@@ -5,6 +5,7 @@ import alquiler.exceptions.ObjetoRepetidoException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Cliente;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -15,7 +16,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class RegistroUsuarioController {
+public class RegistroUsuarioController implements Initializable {
 
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
@@ -53,6 +54,8 @@ public class RegistroUsuarioController {
     private Label ciudadLbl;
     @FXML
     private Label direccionLbl;
+    @FXML
+    private Label regiClienteLbl;
 
 
     @Override
