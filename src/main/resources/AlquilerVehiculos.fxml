@@ -9,9 +9,9 @@
    <TableView fx:id="tablaVehiculos" layoutX="96.0" layoutY="111.0" prefHeight="200.0" prefWidth="332.0">
       <columns>
          <TableColumn fx:id="columnPlaca" prefWidth="75.0" text="Placa" />
-         <TableColumn fx:id="columnMarca" prefWidth="75.0" text="Marca" />
-         <TableColumn fx:id="columnModelo" prefWidth="75.0" text="Modelo" />
-         <TableColumn fx:id="columnPrecio" prefWidth="111.0" text="Precio por día" />
+         <TableColumn fx:id="columnPrecio" prefWidth="84.0" text="Precio por día" />
+         <TableColumn fx:id="columnMarca" prefWidth="66.0" text="Marca" />
+         <TableColumn fx:id="columnModelo" prefWidth="111.0" text="Modelo" />
       </columns>
    </TableView>
    <Label fx:id="alquilarVehiculoLabel" layoutX="163.0" layoutY="26.0" text="Alquilar Vehículo">

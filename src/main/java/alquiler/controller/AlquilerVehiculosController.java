@@ -47,18 +47,34 @@ public class AlquilerVehiculosController implements Initializable {
     private Label fRegresoLabel;
     @FXML
     private Button btnContinuar;
-
+    private String alqExit;
+    private String sAlqCon;
+    private String placaF;
+    private String diaI;
+    private String totalV;
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     private Propiedades propiedades = Propiedades.getInstance();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        columnPlaca.setCellValueFactory( new PropertyValueFactory<>("placa"));
-        columnModelo.setCellValueFactory( new PropertyValueFactory<>("marca"));
-        columnPrecio.setCellValueFactory( new PropertyValueFactory<>("modelo"));
-        columnMarca.setCellValueFactory( new PropertyValueFactory<>("precioPorDia"));
+        alquilarVehiculoLabel.setText(propiedades.getBundle().getString("alquilarVehiculoLabel"));
+        escojaLabel.setText(propiedades.getBundle().getString("escojaLabel"));
+        cedulaLabel.setText(propiedades.getBundle().getString("cedulaLabel"));
+        fInicioLabel.setText(propiedades.getBundle().getString("fInicioLabel"));
+        fRegresoLabel.setText(propiedades.getBundle().getString("fRegresoLabel"));
+        btnContinuar.setText(propiedades.getBundle().getString("btnContinuar"));
+        alqExit=propiedades.getBundle().getString("alqExit");
+        sAlqCon=propiedades.getBundle().getString("sAlqCon");
+        placaF=propiedades.getBundle().getString("placaF");
+        diaI=propiedades.getBundle().getString("diaI");
+        diaF=propiedades.getBundle().getString("diaF");
+        totalV=propiedades.getBundle().getString("totalV");
+        columnPlaca.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnPlaca"))));
+        columnModelo.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnModelo"))));
+        columnPrecio.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnPrice"))));
+        columnMarca.setCellValueFactory( new PropertyValueFactory<>(setText(propiedades.getBundle().getString("columnMarca"))));
 
         tablaVehiculos.setItems( FXCollections.observableArrayList( alquilaFacil.getVehiculos() ) );
+        
     }
 
 
@@ -72,10 +88,10 @@ public class AlquilerVehiculosController implements Initializable {
 
             alquilaFacil.registrarAlquiler(alquiler);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setContentText("Alquiler Exitoso"+"\n"+"Se alquiló el vehiculo con:"+"\n"
-                            +"Placa: "+alquiler.getVehiculo().getPlaca()+"\"+" +
-                            "Desde el día: "+alquiler.getFechaAlquiler().toString()+"\n"+
-                            "Hasta el día: "+alquiler.getFechaRegreso()+"\n"+"Por un valor total de:"
+            alert.setContentText(alqExit+"\n"+sAlqCon+"\n"
+                            +placaF+alquiler.getVehiculo().getPlaca()+"\"+" +
+                            diaI+alquiler.getFechaAlquiler().toString()+"\n"+
+                            diaF+alquiler.getFechaRegreso()+"\n"+totalV
                             +alquiler.getValorTotal()+"$");
             alert.show();
 

@@ -27,8 +27,6 @@ public class VehiculosDisponiblesController implements Initializable {
     @FXML
     private DatePicker fRegreso;
     @FXML
-    private Button btnContinuar;
-    @FXML
     private TableView<Vehiculo> vehDisponibles;
     @FXML
     private TableColumn placaD;
@@ -38,16 +36,31 @@ public class VehiculosDisponiblesController implements Initializable {
     private TableColumn modeloD;
     @FXML
     private TableColumn precioDiaD;
+    @FXML
+    private Label vehDisponiblesLbl;
+    @FXML
+    private Label rangoComprobarLbl;
+    @FXML
+    private Label fechaInicialLbl;
+    @FXML
+    private Label fechaFinalLbl;
+    @FXML
+    private Button btnConsultar;
+
 
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        placaD.setCellValueFactory( new PropertyValueFactory<>("placa"));
-        marcaD.setCellValueFactory( new PropertyValueFactory<>("marca"));
-        modeloD.setCellValueFactory( new PropertyValueFactory<>("modelo"));
-        precioDiaD.setCellValueFactory( new PropertyValueFactory<>("precioPorDia"));
+        vehDisponiblesLbl.setText(propiedades.getBundle().getString("vehDisponiblesLbl"));
+        rangoComprobarLbl.setText(propiedades.getBundle().getString("rangoComprobarLbl"));
+        fechaInicialLbl.setText(propiedades.getBundle().getString("fechaInicialLbl"));
+        fechaFinalLbl.setText(propiedades.getBundle().getString("registrarVehiculo"));
+        btnConsultar.setText(propiedades.getBundle().getString("registrarVehiculo"));
+        placaD.setCellValueFactory( new PropertyValueFactory<>("placaD"));
+        marcaD.setCellValueFactory( new PropertyValueFactory<>("marcaD"));
+        modeloD.setCellValueFactory( new PropertyValueFactory<>("modeloD"));
+        precioDiaD.setCellValueFactory( new PropertyValueFactory<>("precioDiaD"));
 
     }
 

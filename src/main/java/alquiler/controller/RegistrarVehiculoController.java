@@ -5,16 +5,16 @@ import alquiler.exceptions.ObjetoRepetidoException;
 import alquiler.model.AlquilaFacil;
 import alquiler.model.Vehiculo;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class RegistrarVehiculoController {
     private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
-
+    private Propiedades propiedades = Propiedades.getInstance();
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     @FXML
     private TextField placa;
@@ -36,7 +36,52 @@ public class RegistrarVehiculoController {
     private TextField numSillas;
     @FXML
     private TextField foto;
+    @FXML
+    private Label registrarVehiculoLbl;
+    @FXML
+    private Label ingDatosVehLbl;
+    @FXML
+    private Label placaLbl;
+    @FXML
+    private Label nombreVLbl;
+    @FXML
+    private Label marcaLbl;
+    @FXML
+    private Label modeloLbl;
+    @FXML
+    private Label kilomLbl;
+    @FXML
+    private Label alquilerDiaLbl;
+    @FXML
+    private Label automLbl;
+    @FXML
+    private Label sillasLbl;
+    @FXML
+    private Label fotoLbl;
+    @FXML
+    private CheckBox opSi;
+    @FXML
+    private CheckBox opNo;
+    @FXML
+    private Button btnRegistrarVehiculo;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle){
+        registrarVehiculoLbl.setText(propiedades.getBundle().getString("registrarVehiculoLbl"));
+        ingDatosVehLbl.setText(propiedades.getBundle().getString("ingDatosVehLbl"));
+        placaLbl.setText(propiedades.getBundle().getString("placaLbl"));
+        nombreVLbl.setText(propiedades.getBundle().getString("nombreVLbl"));
+        marcaLbl.setText(propiedades.getBundle().getString("marcaLbl"));
+        modeloLbl.setText(propiedades.getBundle().getString("modeloLbl"));
+        kilomLbl.setText(propiedades.getBundle().getString("kilomLbl"));
+        alquilerDiaLbl.setText(propiedades.getBundle().getString("alquilerDiaLbl"));
+        automLbl.setText(propiedades.getBundle().getString("automLbl"));
+        opSi.setText(propiedades.getBundle().getString("opSi"));
+        opNo.setText(propiedades.getBundle().getString("opNo"));
+        sillasLbl.setText(propiedades.getBundle().getString("sillasLbl"));
+        fotoLbl.setText(propiedades.getBundle().getString("fotoLbl"));
+        btnRegistrarVehiculo.setText(propiedades.getBundle().getString("btnRegistrarVehiculo"));
 
+    }
     public void registrarVehiculo(){
         Vehiculo vehiculo;
 
