@@ -2,12 +2,14 @@ package alquiler.model;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 @ToString
 @Getter
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Cliente {
+public class Cliente implements Serializable {
     @EqualsAndHashCode.Include
     private String cedula;
     private String nombre;

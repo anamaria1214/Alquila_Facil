@@ -330,3 +330,135 @@ oct. 03, 2023 11:51:24 P. M. alquiler.model.AlquilaFacil registrarUsuario
 INFO: Cliente registrado exitosamente
 oct. 03, 2023 11:51:38 P. M. alquiler.model.AlquilaFacil registrarAlquiler
 INFO: Alquiler registrado exitosamente
+oct. 04, 2023 4:40:59 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 4:41:10 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:43:38 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 4:43:47 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:47:57 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 4:48:02 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:56:19 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 4:56:24 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:56:45 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:58:02 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 4:58:10 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:58:15 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:58:19 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 4:59:33 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 5:21:42 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 5:23:09 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 5:26:14 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 5:26:27 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 04, 2023 5:27:39 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 04, 2023 5:27:55 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+WARNING: No se ingresó la cédula del cliente
+oct. 04, 2023 5:34:01 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 04, 2023 5:34:07 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 09, 2023 11:12:21 A. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 11:34:17 A. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 12:25:17 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 2:03:25 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 2:08:38 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 2:12:05 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 2:13:11 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 09, 2023 3:16:32 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 3:16:32 P. M. alquiler.model.AlquilaFacil leerClientes
+WARNING: src\main\resources\clientes.txt (El sistema no puede encontrar el archivo especificado)
+oct. 09, 2023 3:16:32 P. M. alquiler.model.AlquilaFacil leerVehiculos
+WARNING: src\main\resources\vehiculos.txt (El sistema no puede encontrar el archivo especificado)
+oct. 09, 2023 3:17:02 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 09, 2023 3:17:20 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+WARNING: No se ingresó la cédula del cliente
+oct. 09, 2023 3:17:26 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 09, 2023 3:19:45 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 3:19:45 P. M. alquiler.model.AlquilaFacil leerClientes
+WARNING: src\main\resources\clientes.txt (El sistema no puede encontrar el archivo especificado)
+oct. 09, 2023 3:19:51 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+SEVERE: El vehiculo que ingresó ya se encuentra registrado
+oct. 09, 2023 3:19:51 P. M. alquiler.controller.RegistrarVehiculoController registrarVehiculo
+WARNING: Valor ya registrado
+oct. 09, 2023 3:19:58 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 09, 2023 3:24:07 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 09, 2023 3:25:25 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+SEVERE: El vehiculo que ingresó ya se encuentra registrado
+oct. 09, 2023 3:25:25 P. M. alquiler.controller.RegistrarVehiculoController registrarVehiculo
+WARNING: Valor ya registrado
+oct. 09, 2023 3:25:31 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 09, 2023 3:25:35 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+SEVERE: El vehiculo que ingresó ya se encuentra registrado
+oct. 09, 2023 3:25:35 P. M. alquiler.controller.RegistrarVehiculoController registrarVehiculo
+WARNING: Valor ya registrado
+oct. 09, 2023 3:25:40 P. M. alquiler.model.AlquilaFacil registrarUsuario
+SEVERE: La persona que ingreso ya se encuestra registrada
+oct. 09, 2023 3:25:40 P. M. alquiler.controller.RegistroUsuarioController registrarUsuario
+WARNING: La persona que ingreso ya se encuestra registrada
+oct. 09, 2023 3:25:45 P. M. alquiler.model.AlquilaFacil registrarUsuario
+INFO: Cliente registrado exitosamente
+oct. 09, 2023 3:48:25 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 2:11:24 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 2:12:19 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+SEVERE: El vehiculo que ingresó ya se encuentra registrado
+oct. 10, 2023 2:12:19 P. M. alquiler.controller.RegistrarVehiculoController registrarVehiculo
+WARNING: Valor ya registrado
+oct. 10, 2023 2:12:26 P. M. alquiler.model.AlquilaFacil registrarUsuario
+SEVERE: La persona que ingreso ya se encuestra registrada
+oct. 10, 2023 2:12:26 P. M. alquiler.controller.RegistroUsuarioController registrarUsuario
+WARNING: La persona que ingreso ya se encuestra registrada
+oct. 10, 2023 2:15:49 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 2:16:28 P. M. alquiler.model.AlquilaFacil registrarVehiculo
+INFO: Vehículo registrado exitosamente
+oct. 10, 2023 2:18:01 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 2:18:20 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+INFO: Alquiler registrado exitosamente
+oct. 10, 2023 3:46:10 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 3:46:29 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+INFO: Alquiler registrado exitosamente
+oct. 10, 2023 5:01:36 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 5:01:56 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+WARNING: Vehículo no disponible
+oct. 10, 2023 5:06:09 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 5:20:42 P. M. alquiler.model.AlquilaFacil <init>
+INFO: Se creó una nueva instancia
+oct. 10, 2023 5:21:05 P. M. alquiler.model.AlquilaFacil registrarAlquiler
+WARNING: Vehículo no disponible

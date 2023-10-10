@@ -1,0 +1,4 @@
+12;juan;si;2;jemail;calarca;si
+123;juan;si;2;jemail;calarca;si
+1090272715;Ana Maria;Cuellar Giraldo;323;anam.cuellarg@uqvirtual.edu.co;Calarca;Las Americas
+1029140991;Juan Esteban;Cruz Perez;311;juane.cruzp@uqvirtual.edu.co;Armenia;Pasadena Country

@@ -6,6 +6,7 @@ alquiler\controller\AlquilerVehiculosController.class
 alquiler\exceptions\FechaInvalidaException.class
 alquiler\exceptions\CampoVacioExcepcion.class
 alquiler\exceptions\NoDisponibleException.class
+alquiler\archivos\ArchivoUtils.class
 alquiler\controller\TotalGanadoController.class
 alquiler\model\Cliente.class
 alquiler\controller\VehiculosDisponiblesController.class

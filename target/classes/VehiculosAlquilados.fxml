@@ -2,28 +2,26 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alquiler.controller.VehiculosAlquiladosController">
 
-    <Label layoutX="103.0" layoutY="25.0" text="Vehiculos alquilados">
-        <font>
-            <Font name="Arial Bold" size="24.0" />
-        </font>
-    </Label>
-    <Label layoutX="137.0" layoutY="81.0" text="Ingrese el un rango de fechas para comprobar disponibilidad:">
-        <font>
-            <Font name="Arial" size="14.0" />
-        </font>
-    </Label>
-    <DatePicker fx:id="fInicial" layoutX="254.0" layoutY="124.0" />
-    <Label layoutX="40.0" layoutY="128.0" text="Fecha inicial:">
-        <font>
-            <Font name="Arial" size="14.0" />
-        </font>
-    </Label>
-    <Button fx:id="btnContuniar" layoutX="361.0" layoutY="177.0" mnemonicParsing="false" onAction="#consultarVehiculos" text="Consultar" />
+    <Label fx:id="lblAlquilados" layoutX="210.0" layoutY="24.0" text="Vehiculos alquilados">
+      <font>
+         <Font name="Arial Bold" size="18.0" />
+      </font></Label>
 
-    <TableView fx:id="vehAlquilados" layoutX="31.0" layoutY="286.0" prefHeight="343.0" prefWidth="542.0">
+    <Label fx:id="lblDescripcion" layoutX="137.0" layoutY="81.0" text="Ingrese el un rango de fechas para comprobar disponibilidad:">
+
+    </Label>
+    <DatePicker fx:id="fecha" layoutX="391.0" layoutY="124.0" />
+    <Label fx:id="lblFecha" layoutX="40.0" layoutY="128.0" text="Fecha inicial:">
+
+
+    </Label>
+    <Button fx:id="btnContinuar" layoutX="498.0" layoutY="179.0" mnemonicParsing="false" onAction="#consultarVehiculos" text="Consultar" />
+
+    <TableView fx:id="vehAlquilados" layoutX="23.0" layoutY="221.0" prefHeight="343.0" prefWidth="542.0">
         <columns>
             <TableColumn fx:id="placaD" prefWidth="135.5" text="Placa" />
             <TableColumn fx:id="precioPorDia" prefWidth="135.5" text="Precio por día" />

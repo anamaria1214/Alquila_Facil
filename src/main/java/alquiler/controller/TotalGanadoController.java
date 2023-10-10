@@ -32,19 +32,19 @@ public class TotalGanadoController  {
 
     private Propiedades propiedades= Propiedades.getInstance();
     private AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
-    /*public void initialize(URL url, ResourceBundle resourceBundle){
+    public void initialize(URL url, ResourceBundle resourceBundle){
         btnCalcular.setText(propiedades.getBundle().getString("btnCalcular"));
         gananciasLbl.setText(propiedades.getBundle().getString("gananciasLbl"));
         fInicialG.setText(propiedades.getBundle().getString("fInicialG"));
         fFinalG.setText(propiedades.getBundle().getString("fFinalG"));
-        ingRangoGananciasLbl.setText(propiedades.getBundle().getString("registrarVehiculo"));
-        mensajeG=propiedades.getBundle().getString("mensajeG");
+        ingRangoGananciasLbl.setText(propiedades.getBundle().getString("ingRangoGananciasLbl"));
+        mensajeG = propiedades.getBundle().getString("mensajeG");
 
-    }*/
+    }
     public void mostrarTotal(){
         double presio = alquilaFacil.ganadoRangoFechas(fInicial.getValue().atStartOfDay(), fFinal.getValue().atStartOfDay());
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Total "+presio);
+        alert.setContentText(mensajeG+presio);
         alert.show();
     }
 }

@@ -1,0 +1,4 @@
+ABC123;carro;renault;2021;foto;2000;90000.0;false;5;true
+ABC1234;carro;renault;2021;foto;2000;90000.0;false;5;true
+ABC12345;carro;renault;2021;foto;2000;90000.0;false;5;true
+ABC1235;carro;renault;2021;foto;2000;90000.0;false;5;true

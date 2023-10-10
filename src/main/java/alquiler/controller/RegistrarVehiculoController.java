@@ -95,6 +95,9 @@ public class RegistrarVehiculoController implements Initializable {
             }
 
             alquilaFacil.registrarVehiculo(vehiculo);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Vehículo registrado exitosamente");
+            alert.show();
 
         } catch (ObjetoRepetidoException | CampoVacioExcepcion e) {
             LOGGER.log(Level.WARNING, e.getMessage());

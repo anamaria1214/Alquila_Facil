@@ -76,11 +76,16 @@ public class RegistroUsuarioController implements Initializable {
 
         try {
             Cliente cliente = new Cliente(fieldCedula.getText(), fieldNombre.getText(), fieldApellidos.getText()
-                    ,Integer.parseInt(fieldTelefono.getText()),fieldEmail.getText(),
+                    , Integer.parseInt(fieldTelefono.getText()),fieldEmail.getText(),
                     fieldCiudad.getText(), fieldDireccion.getText());
             cliente.setCedula( fieldCedula.getText());
 
             alquilaFacil.registrarUsuario(cliente);
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Usuario registrado exitosamente");
+            alert.show();
+
         } catch (CampoVacioExcepcion | ObjetoRepetidoException e) {
             LOGGER.log(Level.WARNING, e.getMessage());
             Alert alert = new Alert(Alert.AlertType.ERROR);

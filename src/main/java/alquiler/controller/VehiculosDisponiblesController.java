@@ -55,12 +55,20 @@ public class VehiculosDisponiblesController implements Initializable {
         vehDisponiblesLbl.setText(propiedades.getBundle().getString("vehDisponiblesLbl"));
         rangoComprobarLbl.setText(propiedades.getBundle().getString("rangoComprobarLbl"));
         fechaInicialLbl.setText(propiedades.getBundle().getString("fechaInicialLbl"));
-        fechaFinalLbl.setText(propiedades.getBundle().getString("registrarVehiculo"));
-        btnConsultar.setText(propiedades.getBundle().getString("registrarVehiculo"));
-        placaD.setCellValueFactory( new PropertyValueFactory<>("placaD"));
-        marcaD.setCellValueFactory( new PropertyValueFactory<>("marcaD"));
-        modeloD.setCellValueFactory( new PropertyValueFactory<>("modeloD"));
-        precioDiaD.setCellValueFactory( new PropertyValueFactory<>("precioDiaD"));
+        fechaFinalLbl.setText(propiedades.getBundle().getString("fechaFinalLbl"));
+        btnConsultar.setText(propiedades.getBundle().getString("btnConsultar"));
+        placaD.setText( propiedades.getBundle().getString("placaD"));
+        marcaD.setText( propiedades.getBundle().getString("marcaD"));
+        modeloD.setText( propiedades.getBundle().getString("modeloD"));
+        precioDiaD.setText( propiedades.getBundle().getString("precioDiaD"));
+        placaD.setCellValueFactory( new PropertyValueFactory<>("placa"));
+        marcaD.setCellValueFactory( new PropertyValueFactory<>("marca"));
+        modeloD.setCellValueFactory( new PropertyValueFactory<>("modelo"));
+        precioDiaD.setCellValueFactory( new PropertyValueFactory<>("precioPorDia"));
+        /*this.placaD.setCellValueFactory( new PropertyValueFactory<>(propiedades.getBundle().getString("placaD")));
+        this.marcaD.setCellValueFactory( new PropertyValueFactory<>(propiedades.getBundle().getString("marcaD")));
+        this.modeloD.setCellValueFactory( new PropertyValueFactory<>(propiedades.getBundle().getString("modeloD")));
+        this.precioDiaD.setCellValueFactory( new PropertyValueFactory<>(propiedades.getBundle().getString("precioDiaD")));*/
 
     }
 
@@ -84,7 +92,7 @@ public class VehiculosDisponiblesController implements Initializable {
         }
     }
 
-    public void consultarVehiculos() throws CampoVacioExcepcion {
+    public void consultarVehiculos(){
 
         if(! (fInicial.getValue()==null || fRegreso.getValue()==null) ) {
 
@@ -92,7 +100,7 @@ public class VehiculosDisponiblesController implements Initializable {
                     fInicial.getValue().atStartOfDay(),
                     fRegreso.getValue().atStartOfDay()
             );
-            vehDisponibles.setItems( FXCollections.observableArrayList(filtrados) );
+            vehDisponibles.setItems( FXCollections.observableArrayList(filtrados));
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Las fechas son obligatorias");

@@ -2,16 +2,17 @@ package alquiler.model;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 @ToString
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
-public class Vehiculo {
+public class Vehiculo implements Serializable {
 
     @EqualsAndHashCode.Include
     private String placa;
-
     private String nombre;
     private String marca;
     private int modelo;
@@ -21,6 +22,7 @@ public class Vehiculo {
     private boolean esAutomatico;
     private int numSillas;
     private boolean disponible;
+
     public Vehiculo(String placa,String referencia, String marca, int modelo, String foto
     ,int kilometraje,double precioPorDia, boolean esAutomatico, int numSillas, boolean disponible ) {
         this.placa=placa;

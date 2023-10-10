@@ -47,6 +47,7 @@ public class MenuInicioController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String valor = propiedades.getBundle().getString("btnRegistrar");
         registrarVehiculo.setText(propiedades.getBundle().getString("registrarVehiculo"));
+        registrarCliente.setText(propiedades.getBundle().getString("registrarCliente"));
         alquilarAuto.setText(propiedades.getBundle().getString("alquilarAuto"));
         vehiculosDisponibles.setText(propiedades.getBundle().getString("vehiculosDisponibles"));
         vehiculosAlquilados.setText(propiedades.getBundle().getString("vehiculosAlquilados"));
@@ -195,8 +196,5 @@ public class MenuInicioController implements Initializable {
 
     }
 
-    public void abrirMarcaMasAlquilada(){
-
-    }
 
 }
