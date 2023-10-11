@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class TotalGanadoController  {
+public class TotalGanadoController  implements Initializable{
     @FXML
     private Button btnCalcular;
     @FXML
@@ -38,13 +38,14 @@ public class TotalGanadoController  {
         fInicialG.setText(propiedades.getBundle().getString("fInicialG"));
         fFinalG.setText(propiedades.getBundle().getString("fFinalG"));
         ingRangoGananciasLbl.setText(propiedades.getBundle().getString("ingRangoGananciasLbl"));
-        mensajeG = propiedades.getBundle().getString("mensajeG");
+        mensajeG= propiedades.getBundle().getString("mensajeG");
 
     }
     public void mostrarTotal(){
-        double presio = alquilaFacil.ganadoRangoFechas(fInicial.getValue().atStartOfDay(), fFinal.getValue().atStartOfDay());
+        double presio = alquilaFacil.ganadoRangoFechas(fInicial.getValue().atStartOfDay(),
+                fFinal.getValue().atStartOfDay());
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText(mensajeG+presio);
+        alert.setContentText(mensajeG+" "+presio);
         alert.show();
     }
 }

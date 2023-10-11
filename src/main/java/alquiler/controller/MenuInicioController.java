@@ -43,6 +43,8 @@ public class MenuInicioController implements Initializable {
     @FXML
     private Button cambiarL;
 
+    private String mensajeMarcarMas;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String valor = propiedades.getBundle().getString("btnRegistrar");
@@ -56,6 +58,7 @@ public class MenuInicioController implements Initializable {
         tituloMenu.setText(propiedades.getBundle().getString("tituloMenu"));
         opcionesMenu.setText(propiedades.getBundle().getString("opcionesMenu"));
         cambiarL.setText(propiedades.getBundle().getString("cambiarL"));
+        mensajeMarcarMas= propiedades.getBundle().getString("mensajeMarcarMas");
 
 
         registrarCliente.setText(valor);
@@ -163,7 +166,7 @@ public class MenuInicioController implements Initializable {
     }
     public void lanzarMensaje(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("La marca más alquilada es "+alquilaFacil.obtenerMarcaMasAlquilada());
+        alert.setContentText(mensajeMarcarMas+" "+alquilaFacil.obtenerMarcaMasAlquilada());
         alert.setHeaderText(null);
         alert.show();
 
